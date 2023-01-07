@@ -46,6 +46,11 @@ const Product = () => {
               className="h-6/6"
               src={secondItem?.img}
               alt={secondItem?.title}
+              style={{
+                boxShadow: '0 0 0 10px rgba(255,255,255,0.5)',
+                transition: 'box-shadow 0.5s ease-in-out',
+                
+              }}
             />
           </div>
           <div className={`w-full sm:w-1/2 p-6 mt-20`}>

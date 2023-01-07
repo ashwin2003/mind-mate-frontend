@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
 import MainHero from "../components/MainHero";
 import MainHeroImage from "../components/MainHeroImage";
-import Pricing from "../components/Pricing";
+
 import Product from "../components/Product";
 import Resultpage from "../components/Resultpage";
 
@@ -20,9 +20,12 @@ const App = () => {
           <div
             className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
           >
-            <Header />
-
-            <MainHero />
+            <LazyShow>
+              <>
+                <Header />
+                <MainHero />
+              </>
+            </LazyShow>
           </div>
         </div>
         <MainHeroImage />
@@ -41,17 +44,12 @@ const App = () => {
         </>
       </LazyShow>
       <LazyShow>
-        <Pricing />
-      </LazyShow>
-      <LazyShow>
         <>
-          <Canvas />
+          {/* <Canvas /> */}
           <About />
         </>
       </LazyShow>
       <Analytics />
-
-      <Resultpage></Resultpage>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 {
   "company": {
     "name": "React landing page 20222",
-    "logo": "/assets/images/logo.png"
+    "logo": "/assets/images/logo2.webp"
   },
   "navigation": [
     {
@@ -27,9 +27,9 @@
     "href": "#"
   },
   "mainHero": {
-    "title": "Hello testing...",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Mind Mate",
+    "subtitle": "",
+    "description": "Welcome to Mind Mate, a mental health app designed to help you take control of your well-being and improve your overall quality of life. With our comprehensive tools and resources, you can track your mood, set and achieve goals, and connect with a community of supportive individuals who are also working to improve their mental health.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
       "text": "Get started",
@@ -41,17 +41,17 @@
     }
   },
   "product": {
-    "title": "React landing page 2123112",
+    "title": "Mood tracking",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/product1.jpg"
+        "title": "Track your emotional health",
+        "description": "Mood tracking is a useful tool that can help you to better understand your emotional well-being. By regularly recording your mood, you can begin to identify patterns and triggers that may be impacting your emotional state. This can be especially helpful if you experience mood swings or fluctuations that you struggle to explain or manage.",
+        "img": "/assets/images/image1.png"
       },
       {
         "title": "Make it your own!",
         "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-        "img": "/assets/images/product2.jpg"
+        "img": "/assets/images/image3.png"
       }
     ]
   },
