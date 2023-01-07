@@ -157,7 +157,7 @@ function Resultpage() {
                 <img
                   alt="team"
                   className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/80x80"
+                  src="https://uploads-ssl.webflow.com/62ab7d5ccc9f587bce83c183/62e952bbd2bcd58147f95a29_Layer%2030.png"
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
@@ -172,7 +172,7 @@ function Resultpage() {
                 <img
                   alt="team"
                   className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/84x84"
+                  src="https://pbs.twimg.com/profile_images/717281826335629312/sm-e_TTy_400x400.jpg"
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
@@ -187,13 +187,13 @@ function Resultpage() {
                 <img
                   alt="team"
                   className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/88x88"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_enSJw5n31x_qHAhTCfpeqh3HO_UtOiQZm7gy0ciyVXpMqVO0HR0woAAxevHHSRYVVE&usqp=CAU"
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Voice That Cares
+                    Arpita Foundation
                   </h2>
-                  <p className="text-gray-500">8448-8448-45</p>
+                  <p className="text-gray-500">8518-8441-45</p>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@ function Resultpage() {
                 <img
                   alt="team"
                   className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/90x90"
+                  src="https://miro.medium.com/max/1024/1*P8NEfZL1BG2lH7J_niopyw.jpeg"
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
@@ -217,11 +217,11 @@ function Resultpage() {
                 <img
                   alt="team"
                   className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/94x94"
+                  src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/dd0dd146650443.585cf051dd67a.png"
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Suicide Prevention
+                    I Call helpline
                   </h2>
                   <p className="text-gray-500">080-23655557</p>
                 </div>
@@ -232,7 +232,7 @@ function Resultpage() {
                 <img
                   alt="team"
                   className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/98x98"
+                  src="https://d1vdjc70h9nzd9.cloudfront.net/media/campaign/426000/426607/image/60b73e2038432.png"
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">

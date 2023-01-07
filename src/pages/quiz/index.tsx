@@ -99,6 +99,7 @@ function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const [showResult, setShowResult] = useState(false);
+  const [resultLoading, setResultLoading] = useState(false);
   const [resultData, setResultData] = useState(null);
 
   const [selectedQuestions, setSelectedQuestions] = useState<string[]>([]);
@@ -116,6 +117,7 @@ function Quiz() {
   };
 
   const handleSubmit = async () => {
+    setResultLoading(true);
     try {
       const { data } = await axios.post(
         "https://mind-mate.onrender.com/api/disorder/get",
@@ -127,8 +129,9 @@ function Quiz() {
         }
       );
       setResultData(data);
-      console.log(data);
       setShowResult(true);
+      setResultLoading(false);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -144,23 +147,30 @@ function Quiz() {
       ) : (
         <div>
           {showResult ? (
-            <Result data={resultData} />
+            <Result data={resultData} setResultLoading={setResultLoading} />
           ) : (
-            <div className="h-screen  flex justify-center align-middle">
-              <div
-                className=" flex flex-col justify-center align-middle"
-                
-              >
-                <h2 className="bg-gray-100 p-16 rounded-md text-lg ">
-                  Thank You for giving <b>MENTAL</b> Assesment Test !!
-                </h2>
-                <button
-                  className="mt-4 ml-40 bg-white text-gray-600 font-bold p-4 border-2 rounded w-32 hover:border-gray-500 "
-                  onClick={handleSubmit}
-                >
-                  Get Result
-                </button>
-              </div>
+            <div>
+              {resultLoading ? (
+                <div className="flex items-center flex-col mt-40 justify-center text-xl">
+                  <h1>"There is hope, even in the darkest of times."</h1>
+                  <br />
+                  <p> Loading...</p>
+                </div>
+              ) : (
+                <div className="h-screen  flex justify-center align-middle">
+                  <div className=" flex flex-col justify-center align-middle">
+                    <h2 className="bg-gray-100 p-16 rounded-md text-lg ">
+                      Thank You for giving <b>MENTAL</b> Assesment Test !!
+                    </h2>
+                    <button
+                      className="mt-4 ml-40 bg-white text-gray-600 font-bold p-4 border-2 rounded w-32 hover:border-gray-500 "
+                      onClick={handleSubmit}
+                    >
+                      Get Result
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
