@@ -17,9 +17,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#ec4755',
-        secondary: '#a12c34',
-        tertiary: '#99a0a3',
+        primary: '#66ccff',  // light blue color for a calming effect
+        secondary: '#99e6ff', // lighter blue for accent
+        tertiary: '#b3f5ff',  // even lighter blue for accents
         border: '#1a2e35',
         background: '#ffffff',
       },
