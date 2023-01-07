@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import QuestionCard from "../../components/QuestionCard";
+import Link from "next/link";
 
 const questions = [
   {
@@ -104,7 +105,7 @@ function Quiz() {
   const onNext = (answer: string, qid: string) => {
     if (answer == "yes") {
       setSelectedQuestions((prev) => [...prev, qid]);
-      console.log(selectedQuestions);
+      // console.log(selectedQuestions);
     }
 
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
@@ -118,7 +119,16 @@ function Quiz() {
           <QuestionCard question={currentQuestion} onNext={onNext} />
         </>
       ) : (
-        <button>Submit</button>
+        <Link
+          href={{
+            pathname: "result",
+            query: {
+              selectedQuestions: selectedQuestions,
+            },
+          }}
+        >
+          Submit
+        </Link>
       )}
     </div>
   );

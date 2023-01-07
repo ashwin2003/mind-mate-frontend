@@ -1,7 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
+import { useRouter } from "next/router";
+import axios from "axios";
 
 function Resultpage() {
+  const router = useRouter();
+  const query = router.query;
+  const [body, setBody] = useState({});
+  console.log(query, body);
+
+  const getResults = async () => {
+    console.log(body);
+
+    try {
+      const { data } = await axios.post(
+        "https://mind-mate.onrender.com/api/disorder/get",
+        query,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(data);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  useEffect(() => {
+    if (!router.isReady) return;
+
+    getResults();
+  }, [router.isReady]);
+
   return (
     <div>
       <section className="text-gray-600 body-font">
