@@ -12,7 +12,7 @@ const fetcher = (url: string) =>
 
 const ResultPage = () => {
   const { data } = useSWR(
-    "https://api.typeform.com/forms/cfYw4Njv/https://api.typeform.com/forms/cfYw4Njv/responses?included_response_ids=f53pg5yex1du6pxhwq7f53pgnt84gvei",
+    "https://api.typeform.com/forms/cfYw4Njv/responses?included_response_ids=f53pg5yex1du6pxhwq7f53pgnt84gvei",
     fetcher
   );
 
