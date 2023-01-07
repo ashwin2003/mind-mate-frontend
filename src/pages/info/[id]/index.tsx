@@ -4,8 +4,7 @@ import Header from "../../../components/Header";
 import { useRouter } from "next/router";
 
 function Resultpage() {
-  const [data, setData] = useState(null);
-  const [did, setDid] = useState("");
+  const [data, setData] = useState<any>(null);
   const router = useRouter();
   const id = router.query.id as string;
   console.log(id);
@@ -21,10 +20,6 @@ function Resultpage() {
   };
 
   //   const test = rdata.disorder;
-
-  useEffect(() => {
-    setDid(id);
-  }, []);
 
   useEffect(() => {
     if (data) return;
@@ -84,7 +79,7 @@ function Resultpage() {
               </div>
 
               {data?.symptoms?.length > 0 &&
-                data.symptoms.map((item) => (
+                data.symptoms.map((item: any) => (
                   <div className=" mt-4 shadow rounded p-6 flex  flex-grow">
                     <div className=" mr-4 flex-shrink-0 w-10 h-10 rounded-full bg-secondary inline-flex items-center justify-center text-black relative z-10">
                       <svg
@@ -118,7 +113,7 @@ function Resultpage() {
           <div className="flex flex-row justify-center  flex-wrap w-full ">
             <div className=" bg-white rounded-md shadow-md p-10 lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
               {data?.steps?.length > 0 &&
-                data?.steps.map((item) => (
+                data?.steps.map((item: any) => (
                   <div className=" flex relative pb-12">
                     <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                       <div className="h-full w-1 bg-gray-200 pointer-events-none" />

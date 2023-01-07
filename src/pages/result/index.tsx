@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../../components/Header";
-import { useRouter } from "next/router";
 
-function Resultpage(props) {
+function Resultpage() {
   // const router = useRouter();
   // const query = router.query;
 

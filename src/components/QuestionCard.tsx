@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 
-function QuestionCard({ question, onNext }) {
+function QuestionCard({ question, onNext }: any) {
   const [answerSelected, setAnswerSelected] = useState("");
 
   useEffect(() => {
