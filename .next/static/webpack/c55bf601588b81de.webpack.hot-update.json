@@ -1,0 +1,1 @@
+{"c":["pages/quiz","pages/info/[id]","pages/index","webpack"],"r":["pages/info/[id]"],"m":["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Finfo%2F%5Bid%5D&absolutePagePath=%2Fhome%2Fmanav%2FDesktop%2Fmind-mate-frontend%2Fsrc%2Fpages%2Finfo%2F%5Bid%5D%2Findex.tsx!","./src/pages/info/[id]/index.tsx"]}

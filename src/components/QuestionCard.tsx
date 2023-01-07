@@ -12,7 +12,7 @@ function QuestionCard({ question, onNext }) {
     <div>
       <Header></Header>
       <div className=" bg-white h-screen flex flex-row justify-center align-middle">
-        <div className=" rounded-lg bg-gray-100 p-4 shadow md:h-3/6 w-3/4 md:mt-28 mt-8">
+        <div className=" rounded-lg bg-gray-100 p-4 shadow md:h-96 w-3/4 md:mt-28 mt-4">
           <h3 className="text-2xl font-bold text-gray-700 mb-8">
             {question.question}
           </h3>

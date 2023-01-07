@@ -1,43 +1,31 @@
 {
   "company": {
     "name": "React landing page 20222",
-    "logo": "/assets/images/logo2.webp"
+    "logo": "/assets/images/logo3.png"
   },
   "navigation": [
     {
-      "name": "Product",
-      "href": "product"
-    },
-    {
-      "name": "Features",
-      "href": "features"
+      "name": "Home",
+      "href": "/"
     },
 
     {
-      "name": "Pricing",
-      "href": "pricing"
-    },
-    {
       "name": "About",
-      "href": "about"
+      "href": "/"
     }
   ],
   "callToAction": {
     "text": "Get started",
-    "href": "#"
+    "href": "/quiz"
   },
   "mainHero": {
     "title": "Mind Mate",
     "subtitle": "",
-    "description": "Welcome to Mind Mate, a mental health app designed to help you take control of your well-being and improve your overall quality of life. With our comprehensive tools and resources, you can track your mood, set and achieve goals, and connect with a community of supportive individuals who are also working to improve their mental health.",
-    "img": "/assets/images/happyTeam.jpeg",
+    "description": "At MindMate, we believe that mental health is just as important as physical health. That's why we've created an app to help people take control of their well-being and improve their overall quality of life. With our comprehensive tools and resources, we hope to raise awareness about mental health and provide support for those who need it.",
+    "img": "/assets/images/img-front.jpg",
     "primaryAction": {
-      "text": "Get started",
+      "text": "Take a quick assessment",
       "href": "#"
-    },
-    "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
     }
   },
   "product": {
@@ -49,8 +37,8 @@
         "img": "/assets/images/image1.png"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "description": "Utilize our website to assist yourself by taking a simple assessment and obtaining information on potential treatments. You can also connect with professionals for further assistance.",
+        "title": "You are not alone, there is support available",
         "img": "/assets/images/image3.png"
       }
     ]
@@ -124,30 +112,28 @@
   "about": {
     "sections": [
       {
-        "name": "Something",
-        "href": "#",
+        "name": "Ashwin",
+        "href": "https://www.linkedin.com/in/ashwin-jagarwal-786799187/",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
-        "href": "#",
+        "name": "Manav",
+        "href": "https://in.linkedin.com/in/manav-mohata-2ba778190",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
-        "href": "#",
+        "name": "Ranjeet",
+        "href": "https://www.linkedin.com/in/ranjeet-saw-4834a21b0/",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
-        "href": "#",
+        "name": "Fatwa",
+        "href": "https://www.linkedin.com/in/fatwaarya/",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "github": "https://github.com/ashwin2003/mind-mate-frontend"
     }
   }
 }

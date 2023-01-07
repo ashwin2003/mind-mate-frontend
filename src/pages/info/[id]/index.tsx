@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 function Resultpage() {
   const [data, setData] = useState(null);
-  const [did, setDid] = useState('');
+  const [did, setDid] = useState("");
   const router = useRouter();
   const id = router.query.id as string;
   console.log(id);
@@ -32,7 +32,11 @@ function Resultpage() {
   }, [id]);
 
   return !data ? (
-    "Loading..."
+    <div className="flex items-center flex-col mt-40 justify-center text-xl">
+      <h1>"There is hope, even in the darkest of times."</h1>
+      <br />
+      <p> Loading...</p>
+    </div>
   ) : (
     <div>
       <Header />

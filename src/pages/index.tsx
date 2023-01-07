@@ -10,7 +10,6 @@ import MainHero from "../components/MainHero";
 import MainHeroImage from "../components/MainHeroImage";
 
 import Product from "../components/Product";
-import Resultpage from "../components/Resultpage";
 
 const App = () => {
   return (
@@ -37,12 +36,12 @@ const App = () => {
           <Canvas />
         </>
       </LazyShow>
-      <LazyShow>
+      {/* <LazyShow>
         <>
           <Features />
           <Canvas />
         </>
-      </LazyShow>
+      </LazyShow> */}
       <LazyShow>
         <>
           {/* <Canvas /> */}

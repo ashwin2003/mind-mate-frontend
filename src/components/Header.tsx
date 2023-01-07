@@ -46,23 +46,23 @@ const Menu = () => {
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map((item) => (
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  key={item.name}
-                  to={item.href}
+                <a
+                  // spy={true}
+                  // active="active"
+                  // smooth={true}
+                  // duration={1000}
+                  // key={item.name}
+                  href={item.href}
                   className="font-medium text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
               <a
-                href="#"
+                href="/quiz"
                 className={`font-medium text-primary hover:text-secondary`}
               >
-                Call to action
+                Take assessment
               </a>
             </div>
           </nav>
