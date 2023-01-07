@@ -101,18 +101,17 @@ function Quiz() {
   // Get the current question based on the current question index
   const currentQuestion = questions[currentQuestionIndex];
 
-  const onNext = (answer, qid) => {
+  const onNext = (answer: string, qid: string) => {
     if (answer == "yes") {
       setSelectedQuestions((prev) => [...prev, qid]);
       console.log(selectedQuestions);
     }
-    
+
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
   return (
     <div>
-
       {/* Render the "Next" button if there are more questions, otherwise render the "Submit" button */}
       {currentQuestionIndex < questions.length - 1 ? (
         <>

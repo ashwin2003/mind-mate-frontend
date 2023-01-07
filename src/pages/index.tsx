@@ -10,6 +10,7 @@ import MainHero from "../components/MainHero";
 import MainHeroImage from "../components/MainHeroImage";
 
 import Product from "../components/Product";
+import Resultpage from "../components/Resultpage";
 
 const App = () => {
   return (
