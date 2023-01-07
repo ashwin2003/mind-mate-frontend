@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import QuestionCard from "../../components/QuestionCard";
-import Link from "next/link";
+import { useRouter } from "next/router";
+import axios from "axios";
+import Result from "../../components/Result";
 
 const questions = [
   {
@@ -97,7 +99,11 @@ const questions = [
 function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
+  const [showResult, setShowResult] = useState(false);
+  const [resultData, setResultData] = useState(null);
+
   const [selectedQuestions, setSelectedQuestions] = useState<string[]>([]);
+  const router = useRouter();
 
   // Get the current question based on the current question index
   const currentQuestion = questions[currentQuestionIndex];
@@ -111,6 +117,29 @@ function Quiz() {
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
+  const handleSubmit = async () => {
+    try {
+      const { data } = await axios.post(
+        "https://mind-mate.onrender.com/api/disorder/get",
+        { questionIds: selectedQuestions }, // body object with an "array" property
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      setResultData(data);
+      console.log(data);
+      // router.push({
+      //   pathname: "/result",
+      //   query: { array: data },
+      // });
+      setShowResult(true);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       {/* Render the "Next" button if there are more questions, otherwise render the "Submit" button */}
@@ -119,16 +148,23 @@ function Quiz() {
           <QuestionCard question={currentQuestion} onNext={onNext} />
         </>
       ) : (
-        <Link
-          href={{
-            pathname: "result",
-            query: {
-              selectedQuestions: selectedQuestions,
-            },
-          }}
-        >
-          Submit
-        </Link>
+        <div>
+          {showResult ? (
+            <Result data={resultData} />
+          ) : (
+            <button
+              // href={{
+              //   pathname: "result",
+              //   query: {
+              //     selectedQuestions: selectedQuestions,
+              //   },
+              // }}
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+          )}
+        </div>
       )}
     </div>
   );
