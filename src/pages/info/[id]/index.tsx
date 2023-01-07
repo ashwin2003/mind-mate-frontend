@@ -39,7 +39,7 @@ function Resultpage() {
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
-              className="object-cover object-center rounded w-5/6 h-3/6 ml-16"
+              className="object-cover object-center rounded w-5/6 h-3/6 md:ml-16 ml-6 shadow-md"
               alt="hero"
               src={
                 data?.images
@@ -52,7 +52,7 @@ function Resultpage() {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               {data?.disorder} Disorder
             </h1>
-            <p className="mb-4 leading-relaxed max-w-xl">{data?.description}</p>
+            <p className="mb-4 leading-relaxed max-w-xl text-left">{data?.description}</p>
 
             <div className="flex justify-center">
               {/* <button className=" inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg">
