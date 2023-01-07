@@ -118,7 +118,16 @@ function Quiz() {
           <QuestionCard question={currentQuestion} onNext={onNext} />
         </>
       ) : (
-        <button>Submit</button>
+        <div className="h-screen  flex justify-center align-middle">
+          <div className=" flex flex-col justify-center align-middle">
+            <h2 className="bg-gray-100 p-16 rounded-md text-lg ">
+              Thank You for giving <b>MENTAL</b> Assesment Test !!
+            </h2>
+            <button className="mt-4 ml-40 bg-white text-gray-600 font-bold p-4 border-2 rounded w-32 hover:border-gray-500 ">
+              Get Result
+            </button>
+          </div>
+        </div>
       )}
     </div>
   );
